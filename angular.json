@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "materialDesignSideNavBasic": {
+    "ng-rx-form-generator": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/materialDesignSideNavBasic",
+            "outputPath": "dist/ng-rx-form-generator",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "materialDesignSideNavBasic:build"
+            "browserTarget": "ng-rx-form-generator:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "materialDesignSideNavBasic:build:production"
+              "browserTarget": "ng-rx-form-generator:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "materialDesignSideNavBasic:build"
+            "browserTarget": "ng-rx-form-generator:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "materialDesignSideNavBasic:serve"
+            "devServerTarget": "ng-rx-form-generator:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "materialDesignSideNavBasic:serve:production"
+              "devServerTarget": "ng-rx-form-generator:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "materialDesignSideNavBasic"
+  "defaultProject": "ng-rx-form-generator"
 }
